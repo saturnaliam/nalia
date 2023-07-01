@@ -7,4 +7,4 @@ interface Props {
 const { boss, completed = 0 } = Astro.props;
 ---
 
-<li>{completed == 1 ? <strike>{boss}</strike> : boss}</li>
+<li>{completed > 0 ? <strike>{boss}</strike> : boss}</li>
