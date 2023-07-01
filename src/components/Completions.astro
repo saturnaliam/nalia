@@ -1,0 +1,28 @@
+---
+import Completion from "./Completion.astro";
+
+interface Props {
+  completions: string;
+  character: string;
+}
+
+const { completions, character } = Astro.props;
+const completionNum = parseInt(completions);
+const bosses = ["hi", "hello"];
+---
+
+<h2>{character}</h2>
+<ul>
+  <Completion boss="It Lives" completed={completionNum & 0b1} />
+  <Completion boss="Isaac" completed={completionNum & 0b10} />
+  <Completion boss="???" completed={completionNum & 0b100} />
+  <Completion boss="Satan" completed={completionNum & 0b1000} />
+  <Completion boss="The Lamb" completed={completionNum & 0b10000} />
+  <Completion boss="Mega Satan" completed={completionNum & 0b100000} />
+  <Completion boss="Boss Rush" completed={completionNum & 0b1000000} />
+  <Completion boss="Hush" completed={completionNum & 0b10000000} />
+  <Completion boss="Delirium" completed={completionNum & 0b100000000} />
+  <Completion boss="Mother" completed={completionNum & 0b1000000000} />
+  <Completion boss="The Beast" completed={completionNum & 0b10000000000} />
+  <Completion boss="Greedier" completed={completionNum & 0b100000000000} />
+</ul>
