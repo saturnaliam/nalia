@@ -1,4 +1,6 @@
 ---
+import Check from "./Check.astro";
+import Cross from "./Cross.astro";
 interface Props {
   boss: string;
   completed?: number;
@@ -7,4 +9,6 @@ interface Props {
 const { boss, completed = 0 } = Astro.props;
 ---
 
-<li>{completed > 0 ? <strike>{boss}</strike> : boss}</li>
+<li class="flex items-center justify-center">
+  {completed > 0 ? <Check name={boss} /> : <Cross name={boss} />}
+</li>
