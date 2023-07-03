@@ -17,7 +17,7 @@ import Hyperlink from "../components/Hyperlink.astro";
 
     <div class="flex justify-center text-xl font-lg space-y-1">
       <main class="w-3/5 text-zinc-300">
-        <div class="rounded-xl w-full h-96">
+        <div class="w-full h-96">
           <p class="text-center px-10">
             hello there!! my name is lucia! i'm a programmer, and typically i
             work with low level languages and robotics, although i can also work
@@ -26,10 +26,20 @@ import Hyperlink from "../components/Hyperlink.astro";
             fields of morphology and syntax!
           </p>
 
-          <Hyperlink
-            destination="https://github.com/saturnaliam"
-            text="Github"
-          />
+          <div class="flex justify-center">
+            <Hyperlink
+              destination="https://github.com/saturnaliam"
+              text="Github"
+            />
+            <Hyperlink
+              destination="https://www.speedrun.com/user/Lucia"
+              text="Speedrunning"
+            />
+            <Hyperlink
+              destination="mailto: llcsaturnaliam@gmail.com"
+              text="Email"
+            />
+          </div>
         </div>
       </main>
     </div>
