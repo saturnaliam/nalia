@@ -1,7 +1,135 @@
 ---
 import Base from "../layouts/Base.astro";
+import Project from "../components/Project.astro";
 ---
 
 <Base title="portfolio" header="portfolio">
-  <p>hi</p>
+  <br />
+  <div class="grid grid-cols-2 gap-6">
+    <div class="border rounded-xl h-[36rem]">
+      <h3 class="text-3xl pb-5">c++ projects</h3>
+
+      <ul
+        class="justify-center list-disc list-inside text-center grid grid-cols-2"
+      >
+        <Project
+          name="TIQ Level Picker"
+          link="https://github.com/saturnaliam/TIQ-Level-Chooser"
+          description="a tool that allows speedrunners to choose any level they wish in The Impossible Quiz"
+        />
+        <Project
+          name="TIQ Rich Presence"
+          link="https://github.com/saturnaliam/TIQ-RPC"
+          description="a tool that allows Discord Rich Presence to work with flash games. (specifically TIQ here.)"
+        />
+        <Project
+          name="TIQ Headers"
+          link="https://github.com/saturnaliam/TIQ-Headers"
+          description="header files to make modding The Impossible Quiz simpler"
+        />
+        <Project
+          name="TIQ Demo TAS"
+          link="https://github.com/saturnaliam/TIQ-Demo-TAS"
+          description="a TAS for The Impossible Quiz Demo"
+        />
+        <div class="col-span-2">
+          <Project
+            name="TIQ TAS Info"
+            link="https://github.com/saturnaliam/TIQ-TASing-Info"
+            description="a tool to make TASing TIQ simpler"
+          />
+        </div>
+      </ul>
+    </div>
+
+    <div class="border rounded-xl h-[36rem]">
+      <h3 class="text-3xl pb-5">c projects</h3>
+
+      <ul
+        class="justify-center list-disc list-inside text-center grid grid-cols-2"
+      >
+        <Project
+          name="Herodotus"
+          link="https://github.com/saturnaliam/herodotus"
+          description="a small, console-based text editor"
+        />
+        <Project
+          name="FUBAR"
+          link="https://github.com/saturnaliam/fubar"
+          description="a brainfuck interpreter"
+        />
+        <div class="col-span-2">
+          <Project
+            name="Imbroglio"
+            link="https://github.com/saturnaliam/imbroglio"
+            description="an assembly-inspired language that transpiles to brainfuck"
+          />
+        </div>
+      </ul>
+    </div>
+
+    <div class="border rounded-xl h-[36rem]">
+      <h3 class="text-3xl pb-5">typescript projects</h3>
+
+      <ul
+        class="justify-center list-disc list-inside text-center grid grid-cols-2"
+      >
+        <Project
+          name="Conlang Generator"
+          link="https://github.com/saturnaliam/conlang-generator"
+          description="a small tool to give ideas for making a constructed language"
+        />
+        <Project
+          name="Password Generator"
+          link="https://github.com/saturnaliam/password-gen-ts"
+          description="a small console-based password gen"
+        />
+        <Project
+          name="Password Brute Force"
+          link="https://github.com/saturnaliam/silly-brute-force"
+          description="an small tool i made for fun, made so i could learn deno"
+        />
+        <Project
+          name="TBOI Tracker"
+          link="https://github.com/saturnaliam/isaac-tracker"
+          description="the tool i used to generate the numbers for my TBOI completions page"
+        />
+      </ul>
+    </div>
+    <div class="border rounded-xl h-[36rem]">
+      <h3 class="text-3xl pb-5">misc projects</h3>
+
+      <ul
+        class="justify-center list-disc list-inside text-center grid grid-cols-2"
+      >
+        <Project
+          name="Brute Gorce"
+          link="https://github.com/saturnaliam/brute-gorce"
+          description="password brute force written in Golang"
+        />
+        <Project
+          name="Golers Number"
+          link="https://github.com/saturnaliam/golers-number"
+          description="a small program that calculates Eulers Number, written in Golang"
+        />
+        <Project
+          name="Conlang Generator"
+          link="https://github.com/saturnaliam/conlang-gen-elixir"
+          description="a rewrite of my conlang generator in Elixir"
+        />
+        <Project
+          name="Count Letters"
+          link="https://github.com/saturnaliam/count-letters"
+          description="counts the frequency of lowercase english letters in a text file in Golang"
+        />
+        <div class="col-span-2">
+          <Project
+            name="FRC Robot"
+            link="https://www.youtube.com/watch?v=Nc5RknvSIHw"
+            description="i'm not allowed to share code, but our robot was written in Java. team 7525 is the goat"
+          />
+        </div>
+      </ul>
+    </div>
+  </div>
 </Base>

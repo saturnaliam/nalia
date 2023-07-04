@@ -1,0 +1,24 @@
+---
+interface Props {
+  name: string;
+  link: string;
+  description: string;
+}
+
+const { name, link, description } = Astro.props;
+---
+
+<div class="pb-4 justify-center">
+  <li>
+    <a
+      href={link}
+      target="_blank"
+      class="text-indigo-300 hover:underline ease-in hover:text-indigo-400 transition-all"
+      >{name}</a
+    >
+  </li>
+
+  <aside class="flex justify-center">
+    <p class="text-lg w-2/3">{description}</p>
+  </aside>
+</div>
