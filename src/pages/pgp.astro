@@ -1,0 +1,33 @@
+---
+import Base from "../layouts/Base.astro";
+const KEY_LINK =
+  "https://keys.openpgp.org/vks/v1/by-fingerprint/E146AE2E5998674C16A10AB3F2FF179FC23F047B";
+---
+
+<Base title="PGP Keys" header="my pgp keys">
+  <p>
+    if you're unsure of what pgp is, you should check <a
+      href="https://en.wikipedia.org/wiki/Pretty_Good_Privacy"
+      target="_blank"
+      class="italic transition-all ease-in-out hover:text-zinc-400 underline"
+      >the wikipedia</a
+    > for more information! if you do know, then you can download my key from <a
+      href={KEY_LINK}
+      class="italic transition-all ease-in-out hover:text-zinc-400 underline"
+      >the OpenPGP key server.</a
+    >
+  </p>
+
+  <p class="pt-12">
+    extra nerd information:<br />type: 3072-bit RSA<br />uid: Lucia
+    &lt;llcsaturnaliam@gmail.com&gt;<br />fingerprint: E146 AE2E 5998 674C 16A1
+    0AB3 F2FF 179F C23F 047B
+  </p>
+
+  <div class="flex justify-center my-12">
+    <p class="italic w-3/5">
+      note: every program and email from me after 4 july 2023 should be signed.
+      do not trust them without the signature.
+    </p>
+  </div>
+</Base>

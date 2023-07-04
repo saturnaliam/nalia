@@ -1,47 +1,22 @@
 ---
-import Navbar from "../components/Navbar.astro";
+import Base from "../layouts/Base.astro";
 import Hyperlink from "../components/Hyperlink.astro";
 ---
 
-<html class="bg-zinc-900">
-  <head>
-    <title>Home</title>
-  </head>
+<Base title="home" header="about me!">
+  <p>
+    hello there!! my name is lucia! i'm a programmer, and typically i work with
+    low level languages and robotics, although i can also work with fullstack
+    development, low-end data science, and machine learning. i enjoy studying
+    linguistics as well, especially the fields of morphology and syntax!
+  </p>
 
-  <body>
-    <Navbar />
-
-    <h2 class="flex justify-center text-5xl font-bold text-zinc-300 pb-5 pt-3">
-      about me!
-    </h2>
-
-    <div class="flex justify-center text-xl font-lg space-y-1">
-      <main class="w-3/5 text-zinc-300">
-        <div class="w-full h-96">
-          <p class="text-center px-10">
-            hello there!! my name is lucia! i'm a programmer, and typically i
-            work with low level languages and robotics, although i can also work
-            with fullstack development, low-end data science, and machine
-            learning. i enjoy studying linguistics as well, especially the
-            fields of morphology and syntax!
-          </p>
-
-          <div class="flex justify-center">
-            <Hyperlink
-              destination="https://github.com/saturnaliam"
-              text="Github"
-            />
-            <Hyperlink
-              destination="https://www.speedrun.com/user/Lucia"
-              text="Speedrunning"
-            />
-            <Hyperlink
-              destination="mailto: llcsaturnaliam@gmail.com"
-              text="Email"
-            />
-          </div>
-        </div>
-      </main>
-    </div>
-  </body>
-</html>
+  <div class="flex justify-center">
+    <Hyperlink destination="https://github.com/saturnaliam" text="Github" />
+    <Hyperlink
+      destination="https://www.speedrun.com/user/Lucia"
+      text="Speedrunning"
+    />
+    <Hyperlink destination="mailto: llcsaturnaliam@gmail.com" text="Email" />
+  </div>
+</Base>
